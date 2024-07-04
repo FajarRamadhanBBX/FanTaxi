@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/staticFiles/styles/style.css">
+    <title>FanTaxi</title>
+</head>
+<body>
+    <header>
+        <div class="header-banner">
+            <img src="/staticFiles/images/FanTaxi.jpg" alt="Taxi">
+        </div>
+    </header>
+    <main>
+        <div class="title">
+            <h1>
+                Let's predict your fare!
+            </h1>
+        </div>
+        <div class="input-feature">
+            <form action="/predict" method="post">
+                <div class="input-table">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="distance">Distance (Km)</label></td></tr>
+                        <tr>
+                            <td>
+                                <input type="number" step="any" name="distance" id="distance"></td></tr>
+                        <tr>
+                            <td>
+                                <label for="duration">Duration (m)</label></td></tr>
+                        <tr>
+                            <td>
+                                <input type="number" step="any" name="duration" id="duration"></td></tr>
+                        <tr>
+                            <td>
+                                <label for="passenger">Number of passenger</label></td></tr>
+                        <tr>
+                            <td>
+                                <input type="number" name="passenger" id="passenger"></td></tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="predict"></td></tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
